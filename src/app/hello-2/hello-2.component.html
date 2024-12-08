@@ -1,0 +1,9 @@
+@if (isShow) {
+<h1>hello 2 {{ name }}</h1>
+} @else {
+<p [contentEditable]="isEditable">hello-2 works!</p>
+}
+<button (click)="toggle()">Toggle</button>
+@for (user of users; track user.name) {
+<app-user [data]="user" />
+}
