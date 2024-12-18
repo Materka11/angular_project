@@ -6,3 +6,28 @@ img {
   width: 50px;
   height: 50px;
 }
+
+.editable-content {
+  border: 1px dashed #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+
+.hello-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hello-button {
+  max-width: 200px;
+  width: fit-content;
+}

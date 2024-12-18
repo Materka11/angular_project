@@ -1,3 +1,14 @@
-<h2>{{ data.name }}</h2>
-<p>{{ data.age }}</p>
-<img [src]="data.src" />
+<mat-card class="card">
+  <mat-card-header>
+    <div
+      mat-card-avatar
+      class="avatar"
+      [ngStyle]="{ 'background-image': 'url(' + data.src + ')' }"
+    ></div>
+    <mat-card-title>{{ data.name }}</mat-card-title>
+    <mat-card-subtitle>Wiek: {{ data.age }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ data.description }}</p>
+  </mat-card-content>
+</mat-card>
